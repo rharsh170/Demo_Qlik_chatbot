@@ -82,10 +82,10 @@ export default function LoginPage() {
           <button className="btn btn-ghost w-full" type="button" onClick={sso} disabled={!!busy}>
             {busy === 'sso' ? <><Loader2 size={16} className="spin" /> Redirecting…</> : 'Sign in with Lupin SSO'}
           </button>
-          <div className="hint">
+          {/* <div className="hint">
             Demo credentials<br />
             Email <code>{DEMO_EMAIL}</code> &nbsp; Password <code>{DEMO_PASSWORD}</code>
-          </div>
+          </div> */}
         </form>
       </section>
     </div>
